@@ -44,13 +44,13 @@ public class EmailGeneratorService {
         """, prompt);
 
 
-       String response = webClient.post() 
-	       .uri("/v1beta/models/gemini-3-flash-preview:generateContent")               .header("x-goog-api-key", apiKey)
-	       .contentType(MediaType.APPLICATION_JSON) 
-	       .bodyValue(requestBody)
-	       .retrieve() 
-	       .bodyToMono(String.class)
-	       .block();
+        String response = webClient.post()
+                .uri("/v1beta/models/gemini-3-flash-preview:generateContent")               .header("x-goog-api-key", apiKey)
+                .contentType(MediaType.APPLICATION_JSON)
+                .bodyValue(requestBody)
+                .retrieve()
+                .bodyToMono(String.class)
+                .block();
 
 
         return extractResponseContent(response);
