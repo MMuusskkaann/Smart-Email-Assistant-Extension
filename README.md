@@ -89,7 +89,7 @@ Smart-Email-Assistant/
 
 ```
 git clone https://github.com/MMuusskkaann/Smart-Email-Assistant-system.git
-cd Smart-Email-Assistant-system
+
 ```
 
 ### 2️⃣ Setup Backend
